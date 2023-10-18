@@ -9,17 +9,33 @@
 <body>
     <header id="h-miplata">
             <img  id="logo-miplata" src="Icons/Mi plata logo.svg" alt="Tu plata, ahora mi plata" >
+            <h1 style="color: #fff;">Iniciar sesión</h1>
+            <p id="registro" style="color: #fff; font-family: 'Gilroy-l';">Registrase</p>
     </header>
     <main>
-        <section class="menu">
+        <section class="menu-inicio-sesion">
+            <div class="container-inicio-sesion">
 
+                <label class="lbl" for="usrio" >Usuario</label>
+                <input type="text" name="usrio" id="inpt-usuario" placeholder="Digite Usuario">
+                <label for="contrsena" class="lbl">Contraseña</label>
+                <input type="password" name="contrsena" id="inpt-contraseña" placeholder="Digite contraseña">
+                <div class="olvd-contraseña">
+                    <p>¿Olvidó su contraseña?</p>
+                </div>
+                <div class="btm-ingresar">
+                    <button type="button" id="btm-ingresar">Ingresar</button>
+                </div>
+
+            </div>
+            
+            <footer class="info-developers" style="color: #fff;">
+                <p>Realizado por: Carolina Luque, Juan Diego, Carlos y Miguel Piedrahita</p>
+            </footer>
         </section>
         
-
+        
     </main>
-    <footer>
-
-    </footer>
     <script src="JS/js.js"></script>
 </body>
 </html>
