@@ -1,0 +1,47 @@
+*{/* estandar */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;   
+}
+@font-face{/* bold font */
+    font-family: 'Gilroy';
+    src:url(/Gilroy-ExtraBold.ttf);
+    font-weight: bold;
+    font-style: bold;
+}
+@font-face {/* text font */
+    font-family: 'Gilroy-l';
+    src: url(/Gilroy-Light.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+:root{/* variables_codigos de color */
+    --clr-blanco: #fff;/* texto */
+    --clr-opcional:#7350a2;/* color botones */
+    --clr-ngro: #000;
+    --clr-logo: #b7c1c7;
+}
+h1{
+    font-family: 'Gilroy';
+}
+p{
+    font-family: 'Gilroy-1';
+}
+#h-miplata{ /* id del header y estylos para el mismo */
+    background-color: #7350a2;
+    width: 100vw;
+    height: 18vh;
+}
+#logo-miplata{
+    width: 40vh;
+    margin: 1rem 0rem 0rem 1rem;
+    left: 0;   
+}
+.menu{
+    height: 82vh;
+    background: linear-gradient(217deg,#36213c,#0d0b0e 70.71%),
+    linear-gradient(127deg, #0d0b0e, #36213c 70.71%),
+    linear-gradient(336deg,#36213c, #0d0b0e 70.71% 70.71%);
+}
+
+
