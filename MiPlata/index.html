@@ -3,43 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<<<<<<< HEAD
-    <link rel="stylesheet" href="/CSS/style.css">
     <title>Mi Plata</title>
- 
-=======
-    <title>Mi Plata</title>
-    <link rel="stylesheet" href="./CSS/style.css">
->>>>>>> 7d94f875c676598be596e7f03f78e8073bea5b54
+    <link rel="stylesheet" href="/CSS/style.css"><!-- hoja de estilos -->
+    <link rel="shortcut icon" href="/Icons/Mi plata-bolsa.svg" type="image/x-icon" ><!-- icono -->
+
 </head>
 <body>
     <header id="h-miplata">
             <img  id="logo-miplata" src="Icons/Mi plata logo.svg" alt="Tu plata, ahora mi plata" >
-            <h1 style="color: #fff;">Iniciar sesión</h1>
-            <p id="registro" style="color: #fff; font-family: 'Gilroy-l';">Registrase</p>
+            <a  id="registro" style="color: #fff; font-family: 'Gilroy-l';">Registrarse</a>
+            <!-- <p id="registro" style="color: #fff; font-family: 'Gilroy-l';">Registrase</p> -->
     </header>
     <main>
         <section class="menu-inicio-sesion">
-            <div class="container-inicio-sesion">
+            <div class="container-inicio-sesion"><!-- Contenedor del loggin -->
+                
+                <form action="" class="container-inicio-sesion formulario-login"><!-- Formulario del loggin -->
 
-                <label class="lbl" for="usrio" >Usuario</label>
-                <input type="text" name="usrio" id="inpt-usuario" placeholder="Digite Usuario">
-                <label for="contrsena" class="lbl">Contraseña</label>
-                <input type="password" name="contrsena" id="inpt-contraseña" placeholder="Digite contraseña">
-                <div class="olvd-contraseña">
-                    <p>¿Olvidó su contraseña?</p>
-                </div>
-                <div class="btm-ingresar">
-                    <button type="button" id="btm-ingresar">Ingresar</button>
-                </div>
+                    <label class="lbl" for="usrio" >Usuario</label>
+                    <input type="text" name="usrio" id="inpt-usuario" placeholder="Digite Usuario">
+                    <label for="contrsena" class="lbl">Contraseña</label>
+                    <input type="password" name="contrsena" id="inpt-contraseña" placeholder="Digite contraseña">
+                    <div class="olvd-contraseña">
+                        <a id="olvido-pws">¿Olvidó su contraseña?</a>
+                    </div>
+                    <div class="btm-ingresar"><!-- boton del login -->
+                        <button type="button" id="btm-ingresar">Ingresar</button>
+                    </div>
+                </form>
 
             </div>
             
             <footer class="info-developers" style="color: #fff;">
-                <p>Realizado por: Carolina Luque, Juan Diego, Carlos y Miguel Piedrahita</p>
+                <p>Realizado por: Carolina Luque, Juan Diego Escobar, Carlos Gutiérrez y Miguel Piedrahita</p>
             </footer>
         </section>
-        
+
         
     </main>
     <script src="JS/js.js"></script>
