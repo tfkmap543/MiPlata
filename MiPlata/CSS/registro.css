@@ -1,0 +1,115 @@
+*{/* estandar */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;   
+}
+@font-face{/* bold font */
+    font-family: 'Gilroy';
+    src:url(/Gilroy-ExtraBold.ttf);
+    font-weight: bold;
+    font-style: bold;
+}
+@font-face {/* text font */
+    font-family: 'Gilroy-l';
+    src: url(/Gilroy-Light.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+:root{/* variables_codigos de color */
+    --clr-blanco: #fff;/* texto */
+    --clr-opcional:#7350a2;/* color botones */
+    --clr-ngro: #000;
+    --clr-logo: #b7c1c7;
+}
+h1{
+    font-family: 'Gilroy';
+}
+#h-miplata{ /* id del header y estylos para el mismo */
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #7350a2;
+    width: 100vw;
+    height: 18vh;
+}
+
+#registro{
+    font-size: 1rem;
+    margin-right: 1rem;
+}
+
+#logo-miplata{
+    
+    width: 40vh;
+    margin: 1rem 0rem 0rem 1rem;
+    left: 0;   
+}
+
+.container-registro{
+    position: absolute;
+    left: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    height: 50%;
+    width: 50%;
+    
+}
+
+
+#label{
+    padding: .50rem;
+    font-family: 'Gilroy-l';
+    font-size: 1.25rem;
+    color: var(--clr-blanco);
+}
+
+
+#input-clave{
+    size: 2px;
+}
+
+
+#button{
+    cursor: pointer;
+    font-family: 'Gilroy';
+    font-size: 1.25rem;
+    color: var(--clr-blanco);
+    background-color: #7350a2;
+    border-radius: 4px;
+    border:1px solid var(--clr-ngro);
+    transition-duration: 0.4s;
+    padding: 5px;
+    margin-top: .50rem;
+}
+
+#button:hover{
+    color: var(--clr-opcional);
+    background-color: var(--clr-blanco);
+    box-shadow: 0 1px 3px 0 var(--clr-ngro), 0 1px 3px 0 var(--clr-ngro);
+}
+.button-registro{
+    text-align: right; 
+}
+
+.background{
+    position: relative;
+    height: 100vh;
+    background: linear-gradient(217deg,#36213c,#0d0b0e 70.71%),
+    linear-gradient(127deg, #0d0b0e, #36213c 70.71%),
+    linear-gradient(336deg,#36213c, #0d0b0e 70.71% 70.71%);
+}
+
+
+.info-developers{
+    font-family: 'Gilroy-l';
+    position: absolute;
+    bottom: 0;
+    left: 25%;
+    padding: 2rem;
+    color: #b7c1c7;
+    text-align: center;
+}

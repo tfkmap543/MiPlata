@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./Icons/Mi plata icono.svg" type="image/x-icon">
+    <title>Mi Plata</title>
+    <link rel="stylesheet" href="./CSS/registro.css">
+</head>
+<body class="background">
+    <header id="h-miplata">
+        <img  id="logo-miplata" src="./Icons/Mi plata logo.svg" alt="Tu plata, ahora es mi plata" >
+        <h1 style="color: #fff;">Registro</h1>
+        <p id="registro" style="color: #fff; font-family: 'Gilroy-l';">Inicio</p>
+    </header>
+
+    <main>
+        <section >
+            <form  class="container-registro">
+
+                <label id="label" for="id">Identificacion*</label>
+                <input type="text" name="identificacion" id="input-id" placeholder="Digite N° de Identficación">
+                <label id="label" for="correo">Correo*</label>
+                <input type="text" name="correo" id="input-correo" placeholder="Digite Correo">
+                <label id="label" for="Clave">Clave*</label>
+                <input type="password" name="Clave" id="input-clave" placeholder="Digite clave" inputmode="numeric" maxlength="4">
+                <label id="label" for="Clave">Confirma Clave*</label>
+                <input type="password" name="Con-Clave" id="input-clave" placeholder="Digite clave" inputmode="numeric" maxlength="4">
+
+                <div class="button-registro">
+                    <button type="button" id="button">Registro</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer class="info-developers" style="color: #fff;">
+        <p>Realizado por: Carolina Luque, Juan Diego, Carlos y Miguel Piedrahita</p>
+    </footer>
+
+</body>
+</html>
