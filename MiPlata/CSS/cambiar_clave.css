@@ -1,0 +1,97 @@
+*{/* estandar */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;   
+    
+}
+
+body{
+    background: linear-gradient(217deg,#36213c,#0d0b0e 70.71%),
+    linear-gradient(127deg, #0d0b0e, #36213c 70.71%),
+    linear-gradient(336deg,#36213c, #0d0b0e 70.71% 70.71%);
+    text-align: center;
+    
+}
+#h-miplata{ /* id del header y estylos para el mismo */
+    display: grid;
+    grid-template-rows: auto;
+    background-color: #7350a2;
+    width: 100vw;
+    height: 14vh;    
+}
+#logo-miplata{    
+    width: 30vh;
+    margin: 1rem 0rem 0rem 1rem;
+    left: 0;   
+}
+header{
+    font-family: 'Gilroy';
+    src:url(/Gilroy-ExtraBold.ttf);
+    font-weight: bold;
+    font-style: bold;
+      
+}
+h3{
+    color:white;
+    font-family: 'Gilroy-l';
+    src: url(/Gilroy-Light.ttf);
+    font-weight: normal;
+    font-style: normal;
+    font-size: 2.5rem;
+    text-align: center;
+    margin-top: 23px;
+}
+.container{
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+    width: 95%;
+    margin: 56px;
+}
+.btm-clave{
+    display: grid;
+    grid-template-rows: auto auto auto;
+    margin-top:17px;
+    margin-bottom: 100px;
+}
+.btm-clave label{
+    color:white;
+    font-family: 'Gilroy-l';
+    src: url(/Gilroy-Light.ttf);
+    font-weight: normal;
+    font-style: normal;
+    margin-right: 19.4375rem;
+}
+#input-actual{
+    width: 450px;
+    height: 30px;
+}
+#input-nueva{
+    width: 450px;
+    height: 30px;
+}
+#input-confirme{
+    width: 450px;
+    height: 30px;
+}
+.volver{
+    background-color:rgb(115, 80, 162, 0.2);
+    font-family: 'Gilroy-l';
+    src: url(/Gilroy-Light.ttf);
+    font-weight: normal;
+    font-style: normal;
+    color: white;
+    width: 90px;
+    height: 35px;
+    margin-right: 16.4375rem;
+}
+.confirmar{
+    background-color: #7350a2;
+    font-family: 'Gilroy-l';
+    src: url(/Gilroy-Light.ttf);
+    font-weight: normal;
+    font-style: normal;
+    color: white;
+    width: 90px;
+    height: 35px;
+}
