@@ -1,0 +1,130 @@
+*{/* estandar */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;   
+}
+@font-face{/* bold font */
+    font-family: 'Gilroy';
+    src:url(/Gilroy-ExtraBold.ttf);
+    font-weight: bold;
+    font-style: bold;
+}
+@font-face {/* text font */
+    font-family: 'Gilroy-l';
+    src: url(/Gilroy-Light.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+:root{/* variables_codigos de color */
+    --clr-blanco: #fff;/* texto */
+    --clr-opcional:#7350a2;/* color botones */
+    --clr-ngro: #000;
+    --clr-logo: #b7c1c7;
+}
+h1{
+    font-family: 'Gilroy';
+}
+#h-miplata{ /* id del header y estylos para el mismo */
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #7350a2;
+    width: 100vw;
+    height: 18vh;
+}
+#logo-miplata{/* logo ubicado en el header */
+    
+    width: 40vh;
+    margin: 1rem 0rem 0rem 1rem;
+    left: 0;   
+}
+
+
+
+/* ---código consultar saldo--- */
+
+.consultar_saldo{
+    display: grid;
+    justify-content: center; 
+    height: 82vh;
+    background: 
+    linear-gradient(224deg,#36213c,rgba(255, 0, 0, 0) 36%),
+    linear-gradient(-27deg, #0d0b0e, rgba(0, 255, 0, 0) 72%),
+    linear-gradient(892deg, #0d0b0e, rgba(0, 0, 255, 0) 114%),
+    linear-gradient(-83deg,#36213c, rgba(255, 255, 0, 0) 731%),
+    linear-gradient(-83deg,#36213c, rgba(255, 255, 0, 0) 731%), 
+    linear-gradient(221deg, #0d0b0e, rgba(255, 0, 255, 0) 170%);
+}
+
+.titulo{
+    color: var(--clr-blanco);
+    display: grid;
+    justify-content: center;
+    height: min-content;
+    margin-top: 1.5rem;
+    font-size: 2rem;
+
+}
+/* esto contiene el título "saldo0" junto a su valor cambiante por DOM */
+.seccion_saldo{
+    margin: .5rem;
+    display: grid;
+    justify-content: center;
+    
+}
+
+.saldo_titulo{
+    color: var(--clr-opcional);
+    font-family: 'Gilroy-l';
+    display: grid;
+    justify-content: center;
+    font-size: 1.7rem;
+    
+    
+}
+/* valor cambiante (depende de las operaciones de retiro y consignación) */
+.dom_saldo{
+    color: var(--clr-blanco);
+    font-family:'Gilroy';
+    font-size: 2.5rem;
+    display: grid;
+    justify-content: center;
+    margin: -9px;
+    
+}
+/* recuadro blanco */
+.contenedor{
+    background-color: var(--clr-blanco);
+    height: 19rem;
+    display: grid;
+    justify-content: center;
+    border-radius: 7px;
+    width: 45rem;
+}
+/* boton "volver al menú" */
+.boton_menu{
+    color: var(--clr-blanco);
+    background-color: var(--clr-opcional);
+    font-family: 'Gilroy';
+    font-size: 1.5rem;
+    width: 13rem;
+    border-radius: .3rem;
+    display: grid;
+    justify-content: center;
+    padding: 0.1rem;
+    margin: 0.7rem auto;
+
+}
+/* footer */
+
+.info-developers{
+    font-family: 'Gilroy-l';
+    position: absolute; /* esta posición absoluta esta haciendo que colapse cuando uso el responsive */
+    bottom: 0;
+    left: 25%;
+    padding: 2rem;
+    color: #b7c1c7;
+         
+}
