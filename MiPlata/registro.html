@@ -16,19 +16,22 @@
 
     <main>
         <section >
-            <form  class="container-registro">
+            <form  class="container-registro" id="registro">
 
-                <label id="label" for="id">Identificacion*</label>
-                <input type="text" name="identificacion" id="input-id" placeholder="Digite N° de Identficación">
-                <label id="label" for="correo">Correo*</label>
-                <input type="text" name="correo" id="input-correo" placeholder="Digite Correo">
-                <label id="label" for="Clave">Clave*</label>
-                <input type="password" name="Clave" id="input-clave" placeholder="Digite clave" inputmode="numeric" maxlength="4">
-                <label id="label" for="Clave">Confirma Clave*</label>
-                <input type="password" name="Con-Clave" id="input-clave" placeholder="Digite clave" inputmode="numeric" maxlength="4">
+                <label id="label" for="input-id"">Identificacion*</label>
+                <input type="text" name="identificacion" id="input-id" class="inputs" placeholder="Digite N° de Identficación">
+                <label id="label" for="input-us">Usuario*</label>
+                <input type="text" name="usuario" id="input-us" class="inputs" placeholder="Digite usuario">
+                <label id="label" for="input-correo">Correo*</label>
+                <input type="text" name="correo" id="input-correo" class="inputs" placeholder="Digite Correo">
+                <label id="label" for="input-clave">Clave*</label>
+                <input type="password" name="Clave" id="input-clave" class="inputs" placeholder="Digite clave" inputmode="numeric" maxlength="4">
+                <label id="label" for="input-conclave">Confirmar Clave*</label>
+                <input type="password" name="Con-Clave" id="input-conclave" class="inputs" placeholder="Digite clave" inputmode="numeric" maxlength="4">
+                <p class="mensaje disabled" id="mensaje">Las claves no coinciden</p>
 
                 <div class="button-registro">
-                    <button type="button" id="button">Registro</button>
+                    <button type="button" id="btn-registrar">Registro</button>
                 </div>
             </form>
         </section>
@@ -38,5 +41,7 @@
         <p>Realizado por: Carolina Luque, Juan Diego, Carlos y Miguel Piedrahita</p>
     </footer>
 
+
+    <script src="./JS/registro.js"></script>
 </body>
 </html>
