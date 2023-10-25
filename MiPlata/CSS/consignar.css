@@ -1,9 +1,20 @@
-*{/* estandar */
-    margin: 0;
+*{  margin: 0;
     padding: 0;
     box-sizing: border-box;   
     
 }
+@font-face{/* bold font */
+    font-family: 'Gilroy';
+    src:url(/Gilroy-ExtraBold.ttf);
+    font-weight: bold;
+    font-style: bold;
+}
+/* @font-face {text font */
+    /* font-family: 'Gilroy-l';
+    src: url(/Gilroy-Light.ttf);
+    font-weight: normal;
+    font-style: normal;
+} */
 
 body{
     background: linear-gradient(217deg,#36213c,#0d0b0e 70.71%),
@@ -26,17 +37,11 @@ body{
 }
 header{
     font-family: 'Gilroy';
-    src:url(/Gilroy-ExtraBold.ttf);
-    font-weight: bold;
-    font-style: bold;
-      
+          
 }
 h3{
-    color:white;
     font-family: 'Gilroy-l';
-    src: url(/Gilroy-Light.ttf);
-    font-weight: normal;
-    font-style: normal;
+    color:white;
     font-size: 2.5rem;
     text-align: center;
     margin-top: 23px;
@@ -44,7 +49,8 @@ h3{
 
 .container{
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: repeat(auto-fit,minmax(150px,1fr));
+    gap: 16px;
     justify-content: space-around;
     
 }
@@ -55,33 +61,26 @@ h3{
 }
 
 .btm-consignacion label{
-    color:white;
     font-family: 'Gilroy-l';
-    src: url(/Gilroy-Light.ttf);
-    font-weight: normal;
-    font-style: normal;
+    color:white;  
+    
 }
-#input-valor{
+#display{
     width: 450px;
     height: 30px;
+    background-color: white;
 }
 .volver{
-    background-color:rgb(115, 80, 162, 0.2);
     font-family: 'Gilroy-l';
-    src: url(/Gilroy-Light.ttf);
-    font-weight: normal;
-    font-style: normal;
+    background-color:rgb(115, 80, 162, 0.2);
     color: white;
     width: 90px;
     height: 35px;
     margin-right: 16.4375rem;
 }
 .confirmar{
-    background-color: #7350a2;
     font-family: 'Gilroy-l';
-    src: url(/Gilroy-Light.ttf);
-    font-weight: normal;
-    font-style: normal;
+    background-color: #7350a2;
     color: white;
     width: 90px;
     height: 35px;
@@ -104,14 +103,16 @@ h3{
     background-color:rgb(54, 33, 60, 0.3);
     margin: 15px;
     text-align: center;
-    color: white;
+    color: white; 
     line-height: 70px;
 }
+
 .c11{
     display: grid;
     justify-content: space-evenly;
     padding: 20.6px
 }
+/*los botones de volver y numero son con blanco y opacidad 0.1 borde color 
 
 
 

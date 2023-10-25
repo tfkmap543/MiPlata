@@ -27,55 +27,41 @@
                 <section>
                     <div class="btm-consignacion">
 
-                        <form action="">
-                            <label for="">Ingrese el valor a consignar</label><br><br>
-                            <input type="number" name="" id="input-valor"><br><br>
+                        <form name="digitar1">
+                            <label for="valor">Ingrese el valor a consignar</label><br><br>
+                            <input type="text" id= "valor" name="ans" value="" autocomplete="off" readonly><br><br>
                             <button class="volver">volver</button>
-                            <button class="confirmar">Confirmar</button>                      
+                            <button class="confirmar" onclick="consignar()">Confirmar</button>                      
         
                         </form>
                     </div>
                 </section>
         
                 <section>
+
+                    <form name="digitar">
+
+                        <div class="teclas">
+
+                            <input type="button"class="cajas c1" value="1" onclick="document.digitar1.ans.value+='1'">
+                            <input type="button"class="cajas c2" value="2" onclick="document.digitar1.ans.value+='2'">
+                            <input type="button"class="cajas c3" value="3" onclick="document.digitar1.ans.value+='3'">
+                            <input type="button"class="cajas c4" value="4" onclick="document.digitar1.ans.value+='4'">
+                            <input type="button"class="cajas c5" value="5" onclick="document.digitar1.ans.value+='5'">
+                            <input type="button"class="cajas c6" value="6" onclick="document.digitar1.ans.value+='6'">
+                            <input type="button"class="cajas c7" value="7" onclick="document.digitar1.ans.value+='7'">
+                            <input type="button"class="cajas c8" value="8" onclick="document.digitar1.ans.value+='8'">
+                            <input type="button"class="cajas c9" value="9" onclick="document.digitar1.ans.value+='9'">
+                            <input type="button"class="cajas c10" value="0" onclick="document.digitar1.ans.value+='0'">   
+                            <button class="cajas c11" id="ac"  onclick="document.digitar1.ans.value=''">
+                                <img src="Icons/Delete boton.png" alt="" width="55px">
+                            </button> 
+
+                        </div>                                             
+    
+                    </form>
         
-                    <div class="teclas">
-                        <div class="cajas c1">
-                            1
-                        </div>
-                        
-                        <div class="cajas c2">
-                            2
-                        </div>
-                        <div class="cajas c3">
-                            3
-                        </div>
-                        <div class="cajas c4">
-                            4
-                        </div>
-                        <div class="cajas c5">
-                            5
-                         </div>
-                        <div class="cajas c6">
-                            6
-                        </div>
-                        <div class="cajas c7">
-                            7
-                        </div>
-                        <div class="cajas c8">
-                            8
-                         </div>
-                        <div class="cajas c9">
-                            9
-                         </div>
-                        <div class="cajas c10">
-                            0
-                        </div>
-                        <div class="cajas c11">
-                            <img src="Icons/Delete boton.png" alt="" width="55px">
-                        </div>
-        
-                    </div>
+                    
         
                 </section>
             </div>
