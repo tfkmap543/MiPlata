@@ -16,16 +16,21 @@ function validando(){
 }
 
 function guardando_vector(){
+    let usuario0=['1234', 'diego escobar', 'juand@gmail.com', '4321', 10000000]
 
-    let id = document.getElementById("input-id").value
-    let usuario = document.getElementById("input-us").value
-    let correo = document.getElementById("input-correo").value
-    let clave=txtclave.value
-    let saldo = 10000000
+    let usuarios = [usuario0]
 
-    let usuario_r={ id, usuario, correo, clave, saldo}
 
-    usuarios.push(usuario_r)
+    let usuarionuevo=[
+        document.getElementById("input-id").value,
+        document.getElementById("input-us").value,
+        document.getElementById("input-correo").value,
+        txtclave.value,
+        10000000
+    ]
+
+
+    usuarios.push(usuarionuevo)
 
     console.log(usuarios)
 
@@ -40,7 +45,7 @@ function reset_campos() {
 }
 
 
-let usuarios = []
+
 let txtclave = document.getElementById("input-clave")
 let txtcon_clave = document.getElementById("input-conclave")
 let show_mensaje = document.getElementById("mensaje")
