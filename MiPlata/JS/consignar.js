@@ -5,5 +5,19 @@ function consignar(){
     let valor=parseInt(document.getElementById('valor').value)
     nuevo_saldo=saldo_ant + valor
     
-    alert(`Transacción exitosa. Este es tu nuevo saldo ${nuevo_saldo}, este es tu saldo anterior ${saldo_ant}. \n Valor de consignación ${valor}`)
+    
 }
+
+let modal=document.getElementById("modal")
+let otr_final=document.getElementById("trfinal")
+let confirmar=document.getElementById("btn-confi")
+
+
+confirmar.addEventListener("click", (e)=>{
+    e.preventDefault
+    otr_final.classList.remove('modal-disabledtr')
+
+})
+
+
+
