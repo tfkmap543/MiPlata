@@ -24,11 +24,11 @@
             </section>
             
             <section class="btns" id="btns">
-                <button class="btn-monto" id="10000">$10.000</button>
-                <button class="btn-monto"id="100000">$100.000</button>
-                <button class="btn-monto"id="20000">$20.000</button>
-                <button class="btn-monto"id="500000">$500.000</button>
-                <button class="btn-monto"id="50000">$50.000</button>
+                <button class="btn-monto" id="r-rapido10">$10.000</button>
+                <button class="btn-monto"id="r-rapido100">$100.000</button>
+                <button class="btn-monto"id="r-rapido20">$20.000</button>
+                <button class="btn-monto"id="r-rapido500">$500.000</button>
+                <button class="btn-monto"id="r-rapido50">$50.000</button>
                 <button class="btn-monto"id="otro">Otro valor</button>
             
             </section>
@@ -41,6 +41,7 @@
                 <section class="sec-input">
                     <input type="number" name="otro" id="otro-v" placeholder="Ingresa el monto a retirar">
                     <br>
+                    <p class="mensaje disabled" id="mensaje-m">Por favor ingresa un monto</p>
                     <br>
             
                     <div class="btns-input">
@@ -59,12 +60,34 @@
                     <button class="btn-modal"id="8">8</button>
                     <button class="btn-modal"id="9">9</button>
                     <button class="btn-modal"id="0">0</button>
-                    <button class="btn-modal"id="borrar"><img src="" alt=""></button>
-            
+                    <button class="btn-modal"id="borrar"><img src="./Icons/Delete boton.png" alt=""></button>
+                    
                 </section>
+            </div>
+
+
+        </section>
+
+        <!-- Modal transacción finalizada -->
+
+        <section class="modal-trfinal modal-disabledtr" id="trfinal">
+            <div class="tr-container">
+                <img src="./Icons/Mensaje ya per.svg" alt="ya per" class="yaper" id="yaper">
+                <a href="./menuprincipal.html"><button class="v-menu" id="v-menu">Volver al menu</button></a>
+
             </div>
         </section>
 
+
+        <!-- Transacción erronea -->
+        
+        <section class="modal-error modal-errordisabled" id="merror">
+            <div class="er-container">
+                <img src="./Icons/Mensaje error mi plata.svg" alt="ya per" class="yaper" id="yaper">
+                <button class="v-menuerror" id="v-menuerror">Volver al menu</button><
+
+            </div>
+        </section>
 
     </main>
 
