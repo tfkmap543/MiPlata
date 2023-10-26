@@ -1,0 +1,120 @@
+*{/* estandar */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;   
+    
+}
+
+@font-face{/* bold font */
+    font-family: 'Gilroy';
+    src:url(/Gilroy-ExtraBold.ttf);
+    font-weight: bold;
+    font-style: bold;
+}
+@font-face {/* text font */
+    font-family: 'Gilroy-l';
+    src: url(/Gilroy-Light.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+:root{/* variables_codigos de color */
+    --clr-blanco: #fff;/* texto */
+    --clr-opcional:#7350a2;/* color botones */
+    --clr-ngro: #000;
+    --clr-logo: #b7c1c7;
+}
+body{
+    background: linear-gradient(217deg,#36213c,#0d0b0e 70.71%),
+    linear-gradient(127deg, #0d0b0e, #36213c 70.71%),
+    linear-gradient(336deg,#36213c, #0d0b0e 70.71% 70.71%);
+    text-align: center;
+    
+}
+#h-miplata{ /* id del header y estylos para el mismo */
+    display: grid;
+    grid-template-rows: auto;
+    background-color: #7350a2;
+    width: 100vw;
+    height: 14vh;    
+}
+#logo-miplata{    
+    width: 30vh;
+    margin: 1rem 0rem 0rem 1rem;
+    left: 0;   
+}
+header{
+    font-family: 'Gilroy';   
+}
+h3{
+    /* font-family: 'Gilroy'; */
+    color:white;
+    font-family: 'Gilroy-l';
+    font-size: 2.5rem;
+    text-align: center;
+    margin-top: 23px;
+}
+.container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(150px,1fr));
+    gap: 16px;
+    justify-content: center;
+    width: 95%;
+    margin: 56px;
+}
+.btm-clave{
+    display: grid;
+    grid-template-rows: auto auto auto;
+    margin-top:17px;
+    margin-bottom: 100px;
+}
+.btm-clave label{
+    font-family: 'Gilroy-l';
+    color:white;
+    margin-right: 19.4375rem;
+}
+#actual{
+    width: 450px;
+    height: 30px;
+}
+#nueva{
+    width: 450px;
+    height: 30px;
+}
+#confirme{
+    width: 450px;
+    height: 30px;
+}
+.volver{
+    background: #2f2236;
+    color: var(--clr-blanco);
+    width: 90px;
+    height: 35px;
+    margin-right: 16.4375rem;
+    /* margin: .5rem; */
+    border-radius: 2px;
+    border:1px solid var(--clr-opcional);
+    font-family: 'Gilroy';
+    font-size: 1.5rem;
+}
+.volver:hover{    
+    color: var(--clr-opcional);
+    background-color: var(--clr-blanco);
+    box-shadow: 0 1px 3px 0 var(--clr-ngro), 0 1px 3px 0 var(--clr-ngro);
+}
+.confirmar{
+    font-family: 'Gilroy';
+    font-size: 1.25rem;
+    color: var(--clr-blanco);
+    background-color: #7350a2;
+    border-radius: 4px;
+    border:1px solid var(--clr-ngro);
+    transition-duration: 0.4s;
+    width: 99px;
+    height: 35px;
+}
+.confirmar:hover{
+    color: var(--clr-opcional);
+    background-color: var(--clr-blanco);
+    box-shadow: 0 1px 3px 0 var(--clr-ngro), 0 1px 3px 0 var(--clr-ngro);
+}
