@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./Icons/Mi plata icono.svg" type="image/x-icon">
+    <link rel="stylesheet" href="./CSS/retirar.css">
+    <title>Mi Plata</title>
+</head>
+<body class="background">
+    <header id="h-miplata">
+        <img  id="logo-miplata" src="./Icons/Mi plata logo.svg" alt="Tu plata, ahora es mi plata" >
+        <h1 style="color: #fff;">Retirar</h1>
+        <p id="registro" style="color: #fff; font-family: 'Gilroy-l';">Inicio</p>
+    </header>
+
+    <main>
+
+        <div class="container-retiro">
+
+            <section class="bienvenido" id="bienvenido">
+                <h2>Bienvenido</h2>
+                <p class="Usuario"></p>
+            </section>
+            
+            <section class="btns" id="btns">
+                <button class="btn-monto" id="r-rapido10">$10.000</button>
+                <button class="btn-monto"id="r-rapido100">$100.000</button>
+                <button class="btn-monto"id="r-rapido20">$20.000</button>
+                <button class="btn-monto"id="r-rapido500">$500.000</button>
+                <button class="btn-monto"id="r-rapido50">$50.000</button>
+                <button class="btn-monto"id="otro">Otro valor</button>
+            
+            </section>
+        </div>
+
+
+
+        <section class="modal modal-disabled" id="modal">
+            <div class="modal-otro">
+                <section class="sec-input">
+                    <input type="number" name="otro" id="otro-v" placeholder="Ingresa el monto a retirar">
+                    <br>
+                    <p class="mensaje disabled" id="mensaje-m">Por favor ingresa un monto</p>
+                    <br>
+            
+                    <div class="btns-input">
+                        <button class="btn-vol" id="btn-vol">Volver</button>
+                        <Button class="btn-con" id="btn-con">Confimar</Button>
+                    </div>
+                </section>
+                <section class="btns-modal" id="btns-modal">
+                    <button class="btn-modal"id="1">1</button>
+                    <button class="btn-modal"id="2">2</button>
+                    <button class="btn-modal"id="3">3</button>
+                    <button class="btn-modal"id="4">4</button>
+                    <button class="btn-modal"id="5">5</button>
+                    <button class="btn-modal"id="6">6</button>
+                    <button class="btn-modal"id="7">7</button>
+                    <button class="btn-modal"id="8">8</button>
+                    <button class="btn-modal"id="9">9</button>
+                    <button class="btn-modal"id="0">0</button>
+                    <button class="btn-modal"id="borrar"><img src="./Icons/Delete boton.png" alt=""></button>
+                    
+                </section>
+            </div>
+
+
+        </section>
+
+        <!-- Modal transacción finalizada -->
+
+        <section class="modal-trfinal modal-disabledtr" id="trfinal">
+            <div class="tr-container">
+                <img src="./Icons/Mensaje ya per.svg" alt="ya per" class="yaper" id="yaper">
+                <a href="./menuprincipal.html"><button class="v-menu" id="v-menu">Volver al menu</button></a>
+
+            </div>
+        </section>
+
+
+        <!-- Transacción erronea -->
+        
+        <section class="modal-error modal-errordisabled" id="merror">
+            <div class="er-container">
+                <img src="./Icons/Mensaje error mi plata.svg" alt="ya per" class="yaper" id="yaper">
+                <button class="v-menuerror" id="v-menuerror">Volver al menu</button><
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="info-developers" style="color: #fff;">
+        <p>Realizado por: Carolina Luque, Juan Diego, Carlos y Miguel Piedrahita</p>
+    </footer>
+    
+    <script src="./JS/retirar.js"></script>
+
+</body>
+</html>
