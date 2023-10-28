@@ -20,15 +20,15 @@
                 
                 <form action="" class="container-inicio-sesion formulario-login"><!-- Formulario del loggin -->
 
-                    <label class="lbl" for="usrio" >Usuario</label>
-                    <input type="text" name="usrio" id="inpt-usuario" placeholder="Digite Usuario">
-                    <label for="contrsena" class="lbl">Contraseña</label>
-                    <input type="password" name="contrsena" id="inpt-contraseña" placeholder="Digite contraseña">
+                    <label class="lbl" for="inpt-usuario">Usuario</label>
+                    <input type="text" id="inpt-usuario" placeholder="Digite Usuario">
+                    <label for="inpt-contraseña" class="lbl">Contraseña</label>
+                    <input type="password" id="inpt-contraseña" placeholder="Digite contraseña">
                     <div class="olvd-contraseña">
-                        <a id="olvido-pws">¿Olvidó su contraseña?</a>
+                        <a id="olvido-pws" >¿Olvidó su contraseña?</a>
                     </div>
                     <div class="btm-ingresar"><!-- boton del login -->
-                        <button type="button" id="btm-ingresar" onclick="ingresar()">Ingresar</button>
+                        <button type="button" id="btm-ingresar" onclick="ingresar(event)">ingresar</button>
                     </div>
                 </form>
 
