@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi Plata</title>
-    <link rel="stylesheet" href="/CSS/style.css"><!-- hoja de estilos -->
+    <link rel="stylesheet" href="CSS/style.css"><!-- hoja de estilos -->
     <link rel="shortcut icon" href="/Icons/Mi plata-bolsa.svg" type="image/x-icon" ><!-- icono -->
 
 </head>
 <body>
     <header id="h-miplata">
             <img  id="logo-miplata" src="Icons/Mi plata logo.svg" alt="Tu plata, ahora mi plata" >
-            <a  id="registro" style="color: #fff; font-family: 'Gilroy-l';">Registrarse</a>
+            <a href="registro.html" id="registro" style="color: #fff; font-family: 'Gilroy-l';">Registrarse</a>
             <!-- <p id="registro" style="color: #fff; font-family: 'Gilroy-l';">Registrase</p> -->
     </header>
     <main>
@@ -25,7 +25,11 @@
                     <label for="inpt-contraseña" class="lbl">Contraseña</label>
                     <input type="password" id="inpt-contraseña" placeholder="Digite contraseña">
                     <div class="olvd-contraseña">
-                        <a id="olvido-pws" >¿Olvidó su contraseña?</a>
+
+                        <a href="olvido_cotraseña.html" id="olvido-pws" >¿Olvidó su contraseña?</a>
+
+                       
+
                     </div>
                     <div class="btm-ingresar"><!-- boton del login -->
                         <button type="button" id="btm-ingresar" onclick="ingresar(event)">ingresar</button>

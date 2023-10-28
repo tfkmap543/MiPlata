@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi Plata</title>
-    <link rel="stylesheet" href="/CSS/style.css"><!-- hoja de estilos -->
+    <link rel="stylesheet" href="CSS/style.css"><!-- hoja de estilos -->
     <link rel="shortcut icon" href="/Icons/Mi plata-bolsa.svg" type="image/x-icon"><!-- icono -->
 
 </head>
@@ -27,14 +27,17 @@
                     <p id="nombre_usuario"></p>
                 </div>
                 <div class="fila1 a">
-                    <button type="button" class="btm-menu" id="btm-retiro">Retirar</button>
-                    <button type="button" class="btm-menu" id="btm-consignar">  Consignar</button>
-                    <button type="button" class="btm-menu" id="consignar-movimientos">Consultar movimientos</button>
+
+                    <a href="retirar.html"><button type="button" class="btm-menu" id="btm-retiro">Retirar</button></a>
+                    <a href="consignar.html"><button type="button" class="btm-menu" id="btm-consignar">  Consignar</button></a>
+                    <a href="consultar_saldo.html"><button type="button" class="btm-menu" id="consignar-movimientos">Consultar movimientos</button></a>
                 </div>
                 <div class="fila1 b">
                     <button type="button" class="btm-menu" id="btm-consultar-saldo"><a href="consultSaldo.html" style="text-decoration:none; color: #fff;">Consultar saldo</a></button>
-                    <button type="button" class="btm-menu" id="btm-cambiar-clave">Cambiar clave</button>
-                    <button type="button" id="btm-salir">Salir</button>
+                    <a href="cambiar_clave.html"><button type="button" class="btm-menu" id="btm-cambiar-clave">Cambiar clave</button></a>
+                    <a href="index.html"><button type="button" id="btm-salir">Salir</button></a>
+
+
                 </div>
             </div>
             <footer class="info-developers" style="color: #fff;">
