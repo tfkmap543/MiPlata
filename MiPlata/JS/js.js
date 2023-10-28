@@ -18,7 +18,6 @@ let usuarios = [
         }
 ];
 
-let cerrar = document.querySelectorAll("#btm-salir")[0]; //creacion de la variable cerrar
 
 
 
@@ -90,6 +89,7 @@ function ingresar(event) {
             /* if (nuser) {
                 nuser.innerText = user.username;
             } */
+            localStorage.setItem("saldo", user.saldo);
             localStorage.setItem('user', JSON.stringify(user)); // guardo la informacion del usuario para que no se pierda al cambiar de pagina
             
             window.location.href = "menuprincipal.html";
@@ -109,4 +109,22 @@ document.addEventListener("DOMContentLoaded", function() { // utilizo la informa
         let user = JSON.parse(storedUser);
         nuser.innerText = user.username;
     }
+});
+document.addEventListener("DOMContentLoaded", function() {
+    let saldo = document.getElementById("Saldo-money");
+    const saldoGuardado = localStorage.getItem("saldo");
+    if (saldo && saldoGuardado) {
+        saldo.innerText = parseFloat(saldoGuardado).toLocaleString('es-CO', {
+            style: 'currency',
+            currency: 'COP',
+            minimumFractionDigits: 0,
+            maximumFractionDigits: 2
+        });
+    }
+});
+document.addEventListener("DOMContentLoaded", function() {
+    let cerrar = document.getElementById("btm-salir");
+    cerrar.addEventListener("click", function() {
+        window.location = "index.html";
+    });
 });
