@@ -128,3 +128,9 @@ document.addEventListener("DOMContentLoaded", function() {
         window.location = "index.html";
     });
 });
+document.addEventListener("DOMContentLoaded", function() {
+    let menu = document.getElementById("btm-volverM");
+    menu.addEventListener("click", function() {
+        window.location = "menuprincipal.html";
+    });
+});
